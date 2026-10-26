@@ -1,0 +1,452 @@
+{
+  "seed": 42,
+  "primary_metric": "ndcg@10",
+  "search": {
+    "ItemKNN": [
+      {
+        "neighbors": 30,
+        "shrinkage": 0.0
+      },
+      {
+        "neighbors": 30,
+        "shrinkage": 20.0
+      },
+      {
+        "neighbors": 100,
+        "shrinkage": 0.0
+      },
+      {
+        "neighbors": 100,
+        "shrinkage": 20.0
+      }
+    ],
+    "iALS": [
+      {
+        "factors": 16,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      {
+        "factors": 16,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      {
+        "factors": 32,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      {
+        "factors": 32,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      }
+    ],
+    "EASE": [
+      {
+        "regularization": 10.0
+      },
+      {
+        "regularization": 100.0
+      },
+      {
+        "regularization": 1000.0
+      }
+    ],
+    "FM": [
+      {
+        "factors": 16,
+        "regularization": 1e-05,
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "negatives": 2,
+        "batch_size": 4096,
+        "seed": 42
+      },
+      {
+        "factors": 16,
+        "regularization": 0.001,
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "negatives": 2,
+        "batch_size": 4096,
+        "seed": 42
+      },
+      {
+        "factors": 32,
+        "regularization": 1e-05,
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "negatives": 2,
+        "batch_size": 4096,
+        "seed": 42
+      },
+      {
+        "factors": 32,
+        "regularization": 0.001,
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "negatives": 2,
+        "batch_size": 4096,
+        "seed": 42
+      }
+    ],
+    "CustomALS": [
+      {
+        "factors": 16,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "half_life_days": 365.0,
+        "seed": 42
+      },
+      {
+        "factors": 16,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "half_life_days": 365.0,
+        "seed": 42
+      },
+      {
+        "factors": 32,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "half_life_days": 365.0,
+        "seed": 42
+      },
+      {
+        "factors": 32,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "half_life_days": 365.0,
+        "seed": 42
+      }
+    ]
+  },
+  "best": {
+    "ItemKNN": {
+      "neighbors": 100,
+      "shrinkage": 20.0
+    },
+    "iALS": {
+      "factors": 32,
+      "regularization": 1.0,
+      "alpha": 20.0,
+      "iterations": 10,
+      "seed": 42
+    },
+    "EASE": {
+      "regularization": 100.0
+    },
+    "FM": {
+      "factors": 16,
+      "regularization": 1e-05,
+      "epochs": 10,
+      "learning_rate": 0.01,
+      "negatives": 2,
+      "batch_size": 4096,
+      "seed": 42
+    },
+    "CustomALS": {
+      "factors": 32,
+      "regularization": 10.0,
+      "alpha": 20.0,
+      "iterations": 10,
+      "half_life_days": 365.0,
+      "seed": 42
+    }
+  },
+  "validation": [
+    {
+      "model": "ItemKNN",
+      "params": {
+        "neighbors": 30,
+        "shrinkage": 0.0
+      },
+      "fit_seconds": 0.7492227079997065,
+      "ndcg@10": 0.018574554694809675,
+      "recall@10": 0.028085997057489303,
+      "coverage@10": 0.8618333333333333,
+      "users": 2369
+    },
+    {
+      "model": "ItemKNN",
+      "params": {
+        "neighbors": 30,
+        "shrinkage": 20.0
+      },
+      "fit_seconds": 0.6348902500003533,
+      "ndcg@10": 0.02126401999705646,
+      "recall@10": 0.033285029750620115,
+      "coverage@10": 0.8063333333333333,
+      "users": 2369
+    },
+    {
+      "model": "ItemKNN",
+      "params": {
+        "neighbors": 100,
+        "shrinkage": 0.0
+      },
+      "fit_seconds": 0.6280639999999948,
+      "ndcg@10": 0.018441417724576376,
+      "recall@10": 0.027461975190326872,
+      "coverage@10": 0.8551666666666666,
+      "users": 2369
+    },
+    {
+      "model": "ItemKNN",
+      "params": {
+        "neighbors": 100,
+        "shrinkage": 20.0
+      },
+      "fit_seconds": 0.6498324170001979,
+      "ndcg@10": 0.021538522895907623,
+      "recall@10": 0.034428760790931996,
+      "coverage@10": 0.7741666666666667,
+      "users": 2369
+    },
+    {
+      "model": "iALS",
+      "params": {
+        "factors": 16,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      "fit_seconds": 1.6138047079998614,
+      "ndcg@10": 0.018616219759309556,
+      "recall@10": 0.034534480664642944,
+      "coverage@10": 0.09083333333333334,
+      "users": 2369
+    },
+    {
+      "model": "iALS",
+      "params": {
+        "factors": 16,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      "fit_seconds": 1.6080060419999427,
+      "ndcg@10": 0.01885484230706758,
+      "recall@10": 0.03534224150642161,
+      "coverage@10": 0.08766666666666667,
+      "users": 2369
+    },
+    {
+      "model": "iALS",
+      "params": {
+        "factors": 32,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      "fit_seconds": 2.6823389169999245,
+      "ndcg@10": 0.023171055316387742,
+      "recall@10": 0.04030089112320069,
+      "coverage@10": 0.16883333333333334,
+      "users": 2369
+    },
+    {
+      "model": "iALS",
+      "params": {
+        "factors": 32,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "seed": 42
+      },
+      "fit_seconds": 2.714122834000136,
+      "ndcg@10": 0.022914879456150734,
+      "recall@10": 0.039454140434744635,
+      "coverage@10": 0.16316666666666665,
+      "users": 2369
+    },
+    {
+      "model": "EASE",
+      "params": {
+        "regularization": 10.0
+      },
+      "fit_seconds": 1.015639833000023,
+      "ndcg@10": 0.022090186935271608,
+      "recall@10": 0.033649217702646075,
+      "coverage@10": 0.7813333333333333,
+      "users": 2369
+    },
+    {
+      "model": "EASE",
+      "params": {
+        "regularization": 100.0
+      },
+      "fit_seconds": 1.1303724589997728,
+      "ndcg@10": 0.023514762672266112,
+      "recall@10": 0.03842054271457894,
+      "coverage@10": 0.7108333333333333,
+      "users": 2369
+    },
+    {
+      "model": "EASE",
+      "params": {
+        "regularization": 1000.0
+      },
+      "fit_seconds": 0.9987950419999834,
+      "ndcg@10": 0.02256842471630619,
+      "recall@10": 0.03753731340825874,
+      "coverage@10": 0.6981666666666667,
+      "users": 2369
+    },
+    {
+      "model": "FM",
+      "params": {
+        "factors": 16,
+        "regularization": 1e-05,
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "negatives": 2,
+        "batch_size": 4096,
+        "seed": 42
+      },
+      "fit_seconds": 1.9482236250000824,
+      "ndcg@10": 0.007407940656539657,
+      "recall@10": 0.012672721614398787,
+      "coverage@10": 0.10733333333333334,
+      "users": 2369
+    },
+    {
+      "model": "FM",
+      "params": {
+        "factors": 16,
+        "regularization": 0.001,
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "negatives": 2,
+        "batch_size": 4096,
+        "seed": 42
+      },
+      "fit_seconds": 1.5526939169999423,
+      "ndcg@10": 0.0064960537437386955,
+      "recall@10": 0.011162679144105164,
+      "coverage@10": 0.006166666666666667,
+      "users": 2369
+    },
+    {
+      "model": "FM",
+      "params": {
+        "factors": 32,
+        "regularization": 1e-05,
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "negatives": 2,
+        "batch_size": 4096,
+        "seed": 42
+      },
+      "fit_seconds": 1.7266124170000694,
+      "ndcg@10": 0.007205095342576338,
+      "recall@10": 0.012881395029066293,
+      "coverage@10": 0.10533333333333333,
+      "users": 2369
+    },
+    {
+      "model": "FM",
+      "params": {
+        "factors": 32,
+        "regularization": 0.001,
+        "epochs": 10,
+        "learning_rate": 0.01,
+        "negatives": 2,
+        "batch_size": 4096,
+        "seed": 42
+      },
+      "fit_seconds": 1.7306681669997488,
+      "ndcg@10": 0.006434369490248529,
+      "recall@10": 0.011017102193969328,
+      "coverage@10": 0.0065,
+      "users": 2369
+    },
+    {
+      "model": "CustomALS",
+      "params": {
+        "factors": 16,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "half_life_days": 365.0,
+        "seed": 42
+      },
+      "fit_seconds": 1.7127068340000733,
+      "ndcg@10": 0.024854604958181856,
+      "recall@10": 0.039401392740384955,
+      "coverage@10": 0.09216666666666666,
+      "users": 2369
+    },
+    {
+      "model": "CustomALS",
+      "params": {
+        "factors": 16,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "half_life_days": 365.0,
+        "seed": 42
+      },
+      "fit_seconds": 1.6855847500000891,
+      "ndcg@10": 0.024727952131153468,
+      "recall@10": 0.03968229002423707,
+      "coverage@10": 0.08733333333333333,
+      "users": 2369
+    },
+    {
+      "model": "CustomALS",
+      "params": {
+        "factors": 32,
+        "regularization": 1.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "half_life_days": 365.0,
+        "seed": 42
+      },
+      "fit_seconds": 2.8701072090002526,
+      "ndcg@10": 0.027778498455776925,
+      "recall@10": 0.04591776732893295,
+      "coverage@10": 0.17366666666666666,
+      "users": 2369
+    },
+    {
+      "model": "CustomALS",
+      "params": {
+        "factors": 32,
+        "regularization": 10.0,
+        "alpha": 20.0,
+        "iterations": 10,
+        "half_life_days": 365.0,
+        "seed": 42
+      },
+      "fit_seconds": 2.8659009579996564,
+      "ndcg@10": 0.02794579680655466,
+      "recall@10": 0.04588713097630321,
+      "coverage@10": 0.1635,
+      "users": 2369
+    }
+  ],
+  "validation_cohort": {
+    "holdout_rows": 12302,
+    "cold_user_rows": 6280,
+    "known_users_without_relevant": 90,
+    "evaluated_users": 2369,
+    "relevant_pairs": 5748
+  }
+}

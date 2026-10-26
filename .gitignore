@@ -1,0 +1,16 @@
+data/
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+*.gz
+*.download
+*.pt
+*.pkl
+*.npz
+*.log
+.DS_Store
+source.html
+.cache/
+results/validation_progress.json

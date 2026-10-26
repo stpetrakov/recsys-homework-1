@@ -1,0 +1,26 @@
+{
+  "raw_rows": 169781,
+  "missing": {
+    "uid": 0,
+    "iid": 0,
+    "rating": 0,
+    "timestamp": 0
+  },
+  "repeated_user_item_rows": 24489,
+  "exact_tuple_duplicates": 23863,
+  "clean_rows": 145292,
+  "selected_rows": 107777,
+  "selected_users": 16427,
+  "selected_items": 6000,
+  "train_rows": 82964,
+  "validation_rows": 12302,
+  "test_rows": 12511,
+  "model_users": 14084,
+  "sparsity": 0.9989065055498062,
+  "first_date": "1998-07-09 00:00:00+00:00",
+  "last_date": "2018-08-26 00:00:00+00:00",
+  "validation_all_catalog_relevant": 20676,
+  "validation_outside_catalog_relevant": 8954,
+  "test_all_catalog_relevant": 20717,
+  "test_outside_catalog_relevant": 8883
+}
